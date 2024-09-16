@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Sign Up Container */
+.signup-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header with Logo and App Name */
+.signup-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.signup-header .logo {
+    width: 150px; /* Adjusting for better visibility */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.signup-header h1 {
+    font-size: 2.5em;
+    color: #4CAF50;
+    text-align: center;
+    margin: 0;
+    line-height: 1.2;
+    /* Adding shadow for better visibility on different devices */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Text Size */
+
+
+/* Sign Up Box */
+.signup-box {
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Error message */
+.error {
+    color: red;
+    font-size: 0.85em;
+    margin-top: 5px;
+    display: none; /* Hidden by default */
+}
+
+/* Sign Up Button */
+.signup-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.signup-btn:hover {
+    background-color: #45a049;
+}
+
+/* Checkbox Styles */
+.input-group label input {
+    margin-right: 5px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+@media (max-width: 768px) {
+    .signup-header h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .signup-header h1 {
+        font-size: 1.8em;
+    }
+}

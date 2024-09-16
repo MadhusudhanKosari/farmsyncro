@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmSyncro - Farmer Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="signup-header">
+            <img src="https://img.freepik.com/free-vector/flat-design-farmers-market-logo_23-2149325904.jpg?size=626&ext=jpg" alt="FarmSyncro Logo" class="logo">
+            <h1>FarmSyncro</h1>
+        </div>
+        <div class="signup-box">
+            <h2>Farmer Sign Up</h2>
+            <form id="signupForm" onsubmit="return validateSignUpForm()">
+                <div class="input-group">
+                    <label for="farmer-name">Farmer Name:</label>
+                    <input type="text" id="farmer-name" name="farmer-name" placeholder="Enter your name" required>
+                    <span id="error-name" class="error"></span>
+                </div>
+                <div class="input-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    <span id="error-phone" class="error"></span>
+                </div>
+                <div class="input-group">
+                    <label for="land-area">Area of Land Owned (in acres):</label>
+                    <input type="number" id="land-area" name="land-area" placeholder="Enter land area" required>
+                    <span id="error-land-area" class="error"></span>
+                </div>
+                <div class="input-group">
+                    <label for="crops">Crops Grown (Last 2-3 months):</label>
+                    <input type="text" id="crops" name="crops" placeholder="Enter crops grown" required>
+                    <span id="error-crops" class="error"></span>
+                </div>
+                <div class="input-group">
+                    <label for="soil-type">Type of Soil:</label>
+                    <input type="text" id="soil-type" name="soil-type" placeholder="Enter type of soil" required>
+                    <span id="error-soil-type" class="error"></span>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password" required>
+                    <span id="error-password" class="error"></span>
+                </div>
+                <div class="input-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+                    <span id="error-confirm-password" class="error"></span>
+                </div>
+                <div class="input-group">
+                    <label>Preferred Farming Type:</label>
+                    <label><input type="checkbox" id="organic" name="farming-type" value="Organic"> Organic</label>
+                    <label><input type="checkbox" id="modern" name="farming-type" value="Modern"> Modern</label>
+                    <span id="error-farming-type" class="error"></span>
+                </div>
+                <div class="input-group">
+                    <button type="submit" class="signup-btn">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>

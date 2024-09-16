@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Intro Section */
+#intro {
+    padding: 20px;
+    text-align: center;
+}
+
+#intro h2 {
+    color: #4CAF50;
+}
+
+/* Features Section */
+#features {
+    padding: 20px;
+}
+
+/* Feature Box 1 - Direct Crop Trade */
+
+/* Feature Box 2 - Crop Analysis and Trends */
+.feature:nth-child(2) {
+    background-image: url('https://img.freepik.com/free-photo/green-tea-bud-leaves-green-tea-plantations-morning_335224-955.jpg?t=st=1726479840~exp=1726483440~hmac=cbb29f3f87d6aad81ee480ca896815073c34b871729460a5a2fd1477c0562ec8&w=740');
+    background-size: cover;
+    background-position: center;
+    color: white; /* Ensures text is readable over image */
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: 200px;
+}
+.feature:nth-child(3) {
+    background-image: url('https://img.freepik.com/free-photo/detail-rice-plant-sunset-valencia-with-plantation-out-focus-rice-grains-plant-seed_181624-25838.jpg?t=st=1726480467~exp=1726484067~hmac=37e10a15eaff183f660af03b590c8894b99864890da32b3b188d75bff1cf4d1a&w=740');
+    background-size: cover;
+    background-position: center;
+    color: white; /* Ensures text is readable over image */
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: 200px;
+}
+.feature:nth-child(4) {
+    background-image: url('https://img.freepik.com/free-photo/planting-organic-rice-farmland_1150-18065.jpg?t=st=1726481463~exp=1726485063~hmac=75379adb9920dcc89c19984036697298ad79aa84be0113972c0218f2cc711ba5&w=740');
+    background-size: cover;
+    background-position: center;
+    color: white; /* Ensures text is readable over image */
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: 200px;
+}
+
+.feature h3 {
+    color: white; /* Make sure the title is visible on the background image */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Seasonal Crops */
+#seasonal-crops {
+    margin-top: 10px;
+    padding: 10px;
+    display: none;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.styled-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.styled-button:hover {
+    background-color: #45a049;
+}
+
+.styled-button:active {
+    background-color: #3e8e41;
+}
+
+.styled-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.5);
+}
