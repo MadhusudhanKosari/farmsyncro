@@ -37,7 +37,7 @@ function displayTopPriceCrops() {
         cropCard.classList.add("crop-card");
         cropCard.innerHTML = `
             <h3>${crop.name}</h3>
-            <p>$${crop.price} per kg</p>
+            <p>₹${crop.price} per kg</p>
         `;
         priceCropsContainer.appendChild(cropCard);
     });
