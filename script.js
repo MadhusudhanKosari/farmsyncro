@@ -1,3 +1,5 @@
+
+
 // Wait for DOM to load
 document.addEventListener("DOMContentLoaded", function () {
     const showSeasonalBtn = document.getElementById("show-seasonal-btn");

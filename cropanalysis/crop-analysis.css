@@ -1,0 +1,80 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #4CAF50;
+    margin: 0;
+}
+
+/* Crop Section */
+.crop-section {
+    margin-top: 40px;
+}
+
+.crop-section h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Crop Cards Layout */
+.crop-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Individual Crop Card */
+.crop-card {
+    background-color: white;
+    width: 220px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+.crop-card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.crop-card p {
+    font-size: 1.2em;
+    color: #4CAF50;
+    margin-bottom: 5px;
+}
+
+.crop-card span {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .crop-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
