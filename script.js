@@ -1,5 +1,5 @@
-
-
+const analysisBtn = document.getElementById("analysis")
+console.log(analysisBtn)
 // Wait for DOM to load
 document.addEventListener("DOMContentLoaded", function () {
     const showSeasonalBtn = document.getElementById("show-seasonal-btn");
@@ -25,4 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         seasonalCropsDiv.innerHTML = cropList;
         seasonalCropsDiv.style.display = "block";
     });
+});
+analysisBtn.addEventListener("click",function(){
+    window.location.href="../cropanalysis/index.html"
 });
