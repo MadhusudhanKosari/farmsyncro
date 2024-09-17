@@ -61,6 +61,7 @@ nav ul li a {
     line-height: 1.6;
 }
 
+/* Contact Form */
 form {
     margin-top: 20px;
     display: flex;
@@ -73,15 +74,19 @@ form label {
 }
 
 form input, form textarea {
-    margin-bottom: 20px;
-    padding: 10px;
+    margin-bottom: 10px;
+    padding: 8px; /* Reduced padding */
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 14px; /* Reduced font size */
+}
+
+form textarea {
+    height: 120px; /* You can adjust this for smaller or larger input areas */
 }
 
 form button {
-    padding: 10px 20px;
+    padding: 8px ; /* Reduced padding for the button */
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -90,6 +95,7 @@ form button {
     cursor: pointer;
     display: flex;
     align-items: center;
+    margin-right: auto;
 }
 
 form button i {
@@ -141,7 +147,7 @@ form button:hover {
 
 .chatbot h3 {
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .chatbox {
@@ -156,23 +162,29 @@ form button:hover {
 .chatbot-messages {
     max-height: 200px;
     overflow-y: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     background-color: #f9f9f9;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
 }
 
+.chatbot-input-container {
+    display: flex;
+    gap: 20px; /* Increased gap to avoid overlapping */
+}
+
 #chatbot-input {
-    width: 80%;
-    padding: 10px;
+    flex-grow: 1;
+    padding: 1px; /* Adjust padding */
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    margin-bottom: 10px;
 }
 
 #send-chatbot-message {
-    padding: 10px 20px;
+    padding: 5px 16px; /* Adjusted padding */
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -181,6 +193,7 @@ form button:hover {
     border-radius: 5px;
     display: flex;
     align-items: center;
+    white-space: nowrap;
 }
 
 #send-chatbot-message i {
@@ -196,6 +209,6 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
+    padding: 20px 10px;
+    margin-top: 30px;
 }
