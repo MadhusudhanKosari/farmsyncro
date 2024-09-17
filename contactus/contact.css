@@ -1,0 +1,201 @@
+/* Reset and common styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+}
+
+nav .logo img {
+    width: 50px;
+    height: 50px;
+}
+
+nav .logo h1 {
+    color: white;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Contact Us section */
+.contact-us {
+    padding: 40px 20px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contact-us h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contact-us p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+form button i {
+    margin-right: 10px;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Social Media Section */
+.social-media {
+    margin-top: 40px;
+}
+
+.social-media h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.social-media ul {
+    list-style-type: none;
+}
+
+.social-media ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.social-media ul li i {
+    margin-right: 10px;
+    color: #4CAF50;
+}
+
+.social-media ul li a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.social-media ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Chatbot */
+.chatbot {
+    margin-top: 40px;
+}
+
+.chatbot h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.chatbox {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.chatbot-messages {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#chatbot-input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#send-chatbot-message {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#send-chatbot-message i {
+    margin-right: 10px;
+}
+
+#send-chatbot-message:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
