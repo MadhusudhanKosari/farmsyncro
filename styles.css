@@ -102,7 +102,7 @@ nav ul li a:hover {
 }
 
 .feature:nth-child(3):hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 /* .feature:nth-child(3)::after {
@@ -142,15 +142,45 @@ nav ul li a:hover {
     background-color: #45a049;
 }
 .feature:nth-child(4) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-image: url('https://img.freepik.com/free-photo/planting-organic-rice-farmland_1150-18065.jpg?t=st=1726481463~exp=1726485063~hmac=75379adb9920dcc89c19984036697298ad79aa84be0113972c0218f2cc711ba5&w=740');
     background-size: cover;
     background-position: center;
-    color: white; /* Ensures text is readable over image */
+    color: white;
     margin: 15px 0;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     min-height: 200px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.feature:nth-child(4):hover {
+    transform: scale(1.02);
+}
+
+.feature:nth-child(4) button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.feature:nth-child(4) button:hover {
+    background-color: #45a049;
 }
 
 .feature h3 {

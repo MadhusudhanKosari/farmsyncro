@@ -3,66 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seasonal Crops - FarmSyncro</title>
-    <link rel="stylesheet" href="seasonal-crops.css">
+    <title>Seasonal Crop Analysis - FarmSyncro</title>
+    <link rel="stylesheet" href="district-crops.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Seasonal Crops in India</h1>
-            <p>Learn about the best crops to grow in each season to maximize your yield.</p>
+            <h1>Select District and Season for Crop Analysis</h1>
+            <p>Select a district and a season to view the seasonal crops based on soil, weather, and profit/loss analysis.</p>
         </header>
 
-        <!-- Spring Crops Section -->
-        <section class="season" id="spring">
-            <h2>Spring Season Crops (Feb to April)</h2>
-            <ul>
-                <li>Wheat - Ideal for the cool weather at the beginning of the season.</li>
-                <li>Barley - Grows well in temperate climates, ideal for spring.</li>
-                <li>Cucumber - Best suited for the moderate temperatures in spring.</li>
-                <li>Mustard - Thrives in the cool to moderate weather of spring.</li>
-                <li>Sunflower - Flourishes in the early warmth of spring.</li>
-            </ul>
-        </section>
+        <!-- Dropdown for District Selection -->
+        <div class="filter-box">
+            <label for="districts">Select District:</label>
+            <select id="districts" onchange="showSeasonFilter()">
+                <option value="">--Select District--</option>
+                <option value="nalgonda">Nalgonda</option>
+                <option value="warangal">Warangal</option>
+                <option value="karimnagar">Karimnagar</option>
+                <option value="khammam">Khammam</option>
+                <option value="adilabad">Adilabad</option>
+                <option value="rangareddy">Rangareddy</option>
+                <option value="mahabubnagar">Mahabubnagar</option>
+                <option value="medak">Medak</option>
+                <option value="nizamabad">Nizamabad</option>
+                <option value="siddipet">Siddipet</option>
+            </select>
+        </div>
 
-        <!-- Summer Crops Section -->
-        <section class="season" id="summer">
-            <h2>Summer Season Crops (April to June)</h2>
-            <ul>
-                <li>Paddy (Rice) - Requires abundant sunlight and warm temperatures.</li>
-                <li>Millet (Bajra) - Heat-tolerant and thrives in the high temperatures.</li>
-                <li>Maize - Grows well in the hot and dry climate of Indian summers.</li>
-                <li>Pulses (Moong Dal) - Short-duration crop that benefits from summer warmth.</li>
-                <li>Groundnut - Thrives in the heat and requires good sunlight exposure.</li>
-            </ul>
-        </section>
+        <!-- Dropdown for Season Selection -->
+        <div class="filter-box" id="season-filter" style="display: none;">
+            <label for="seasons">Select Season:</label>
+            <select id="seasons" onchange="showSeasonInfo()">
+                <option value="">--Select Season--</option>
+                <option value="summer">Summer</option>
+                <option value="monsoon">Monsoon</option>
+                <option value="winter">Winter</option>
+                <option value="spring">Spring</option>
+            </select>
+        </div>
 
-        <!-- Monsoon Crops Section -->
-        <section class="season" id="monsoon">
-            <h2>Monsoon Season Crops (June to September)</h2>
-            <ul>
-                <li>Rice - Needs a large amount of water, ideal for monsoon rains.</li>
-                <li>Soybean - Benefits from the high moisture levels during monsoons.</li>
-                <li>Jute - Requires abundant water and thrives in humid climates.</li>
-                <li>Sugarcane - Grows well in wet and warm monsoon conditions.</li>
-                <li>Cotton - Requires warm weather and benefits from the rainy season.</li>
-            </ul>
-        </section>
-
-        <!-- Winter Crops Section -->
-        <section class="season" id="winter">
-            <h2>Winter Season Crops (October to February)</h2>
-            <ul>
-                <li>Carrot - Prefers the cooler winter temperatures for proper growth.</li>
-                <li>Peas - Grows best in the cool and crisp weather of winter.</li>
-                <li>Garlic - Thrives in cool climates and grows well during the winter months.</li>
-                <li>Onion - Prefers the cooler weather and reduced sunlight of winter.</li>
-                <li>Spinach - Grows quickly in cool temperatures and is ideal for winter.</li>
-            </ul>
-        </section>
-
+        <!-- Section to Display Seasonal Crop Information -->
+        <div class="season-info" id="season-info" style="display: none;">
+            <h2 id="season-name"></h2>
+            <p id="weather-condition"></p>
+            <p id="soil-condition"></p>
+            <p id="day-night-duration"></p>
+            
+            <!-- Crops Display -->
+            <h3>Recommended Seasonal Crops:</h3>
+            <ul id="crop-list"></ul>
+        </div>
     </div>
 
-    <script src="seasonal-crops.js"></script>
+    <script src="district-crops.js"></script>
 </body>
 </html>

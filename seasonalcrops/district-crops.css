@@ -30,39 +30,53 @@ header p {
     margin-top: 10px;
 }
 
-/* Seasonal Crop Sections */
-.season {
+/* Filter Box */
+.filter-box {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.filter-box label {
+    font-size: 1.2em;
+    color: #333;
+    margin-right: 10px;
+}
+
+.filter-box select {
+    padding: 10px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+/* District and Season Information */
+.season-info {
     background-color: white;
     padding: 20px;
-    margin: 20px 0;
+    margin-top: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
 }
 
-.season h2 {
+.season-info h2 {
     font-size: 2em;
     color: #4CAF50;
-    margin-bottom: 15px;
 }
 
-.season ul {
+.season-info p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.season-info ul {
     list-style-type: none;
     padding-left: 0;
 }
 
-.season ul li {
+.season-info ul li {
     font-size: 1.2em;
     color: #555;
     margin-bottom: 10px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .season h2 {
-        font-size: 1.8em;
-    }
-
-    .season ul li {
-        font-size: 1.1em;
-    }
 }

@@ -1,5 +1,7 @@
 const analysisBtn = document.getElementById("analysis")
-console.log(analysisBtn)
+
+const SeasonalBtn = document.getElementById("seasonal")
+console.log(SeasonalBtn);
 // Wait for DOM to load
 document.addEventListener("DOMContentLoaded", function () {
     const showSeasonalBtn = document.getElementById("show-seasonal-btn");
@@ -28,4 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 analysisBtn.addEventListener("click",function(){
     window.location.href="../cropanalysis/index.html"
+});
+SeasonalBtn.addEventListener("click",function(){
+    window.location.href="../seasonalcrops/index.html"
 });
