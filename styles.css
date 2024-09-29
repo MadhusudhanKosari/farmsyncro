@@ -50,6 +50,15 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+nav select {
+    margin-left: 15px; /* Space between notifications and language selector */
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+}
+
 /* Intro Section */
 #intro {
     padding: 20px;
@@ -65,92 +74,47 @@ nav ul li a:hover {
     padding: 20px;
 }
 
-/* Feature Box 1 - Direct Crop Trade */
-
-/* Feature Box 2 - Crop Analysis and Trends */
-.feature:nth-child(2), .feature:nth-child(3), .feature:nth-child(4) {
-    background-size: cover;
-    background-position: center;
-    color: white;
-    margin: 15px 0;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    min-height: 250px;
-    position: relative;
+/* Feature Box */
+.feature-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    text-align: center;
-    overflow: hidden;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow wrapping to the next line */
 }
 
-.feature:nth-child(2)::before, .feature:nth-child(3)::before, .feature:nth-child(4)::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
-
-.feature:nth-child(2) *, .feature:nth-child(3) *, .feature:nth-child(4) * {
+.feature {
+    width: 30%; /* Set to a percentage for equal sizing */
+    margin: 15px;
     position: relative;
-    z-index: 2;
+    text-align: center;
+    transition: transform 0.3s ease;
 }
 
-.feature:nth-child(2) {
-    background-image: url('https://img.freepik.com/free-photo/green-tea-bud-leaves-green-tea-plantations-morning_335224-955.jpg?t=st=1726479840~exp=1726483440~hmac=cbb29f3f87d6aad81ee480ca896815073c34b871729460a5a2fd1477c0562ec8&w=740');
+.feature a {
+    display: block; /* Make the whole area clickable */
+    text-decoration: none; /* Remove text underline */
 }
 
-.feature:nth-child(3) {
-    background-image: url('https://kj1bcdn.b-cdn.net/media/7418/soil_620x350_81487334083.jpg');
+.feature img {
+    width: 100%; /* Make the image take full width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    opacity: 0.8; /* Slightly transparent for better text visibility */
 }
 
-.feature:nth-child(4) {
-    background-image: url('https://eng.ruralvoice.in/uploads/images/2023/02/image_750x_63f4493d63c11.jpg');
-}
-
-.feature:nth-child(2):hover, .feature:nth-child(3):hover, .feature:nth-child(4):hover {
-    transform: scale(1.02);
-}
-
-.feature h3 {
-    font-size: 1.5em;
-    margin-bottom: 15px;
+.feature:hover {
+    transform: scale(1.05); /* Pop effect on hover */
 }
 
 .feature p {
-    font-size: 1em;
-    margin-bottom: 20px;
-}
-
-.feature button {
-    background-color: #4CAF50;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5); /* Background for text visibility */
     color: white;
-    border: none;
-    padding: 12px 24px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-top: 15px;
-    cursor: pointer;
+    padding: 5px 10px;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.feature button:hover {
-    background-color: #45a049;
-}
-
-.feature h3 {
-    color: white; /* Make sure the title is visible on the background image */
 }
 
 /* Footer Styles */
@@ -159,9 +123,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    position: relative;
 }
 
 /* Seasonal Crops */
@@ -172,32 +134,4 @@ footer {
     background-color: #f1f1f1;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
-
-.styled-button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-.styled-button:hover {
-    background-color: #45a049;
-}
-
-.styled-button:active {
-    background-color: #3e8e41;
-}
-
-.styled-button:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.5);
 }

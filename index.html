@@ -21,44 +21,53 @@
             <li><a href="./contactus/index.html">Contact</a></li>
             <li><a href="./loginpage/index.html">Login</a></li>
             <li><a href="./signuppage/index.html">Sign up</a></li>
+            <li><a href="#" id="notification-btn">Notifications</a></li>
+            <li>
+                <select id="language-select">
+                    <option value="en">English</option>
+                    <option value="hi">हिन्दी</option>
+                    <option value="te">తెలుగు</option>
+                </select>
+            </li>
         </ul>
     </nav>
 
     <section id="intro">
         <h2>Welcome to FarmSyncro</h2>
-        <p>We help farmers sell their crops directly, and provide valuable insights on crop trends and seasonal availability.</p>
-            
+        <p>We help farmers sell their crops directly and provide valuable insights on crop trends and seasonal availability.</p>
     </section>
 
     <section id="features">
         <h2>Our Features</h2>
 
-        <!-- Feature 1: Buying and Selling Crops -->
-        <div class="feature" id="trade">
-            <h3>Direct Crop Trade</h3>
-            <p>FarmSyncro allows farmers to sell their crops directly to buyers, removing the middleman and ensuring fair prices.</p>
-            <!-- <ul></ul>
-                <li>Buy fresh crops directly from farmers</li>
-                <li>Sell crops through our platform</li>
-            </ul> -->
-        </div>
+        <!-- Image Buttons for Features -->
+        <div class="feature-container">
+            <div class="feature" id="trade">
+                <a href="../croptrade/index.html">
+                    <img src="https://img.freepik.com/free-photo/green-tea-bud-leaves-green-tea-plantations-morning_335224-955.jpg?t=st=1726479840~exp=1726483440~hmac=cbb29f3f87d6aad81ee480ca896815073c34b871729460a5a2fd1477c0562ec8&w=740" alt="Direct Crop Trade">
+                    <p>Direct Crop Trade</p>
+                </a>
+            </div>
 
-        <!-- Feature 2: Crop Analysis -->
-         
-        <div class="feature nth-child(2)" id="analysis">
-            <h3>Crop Analysis and Trends</h3>
-            <p>Detailed analysis of crop trends and demand to help farmers plan better.</p>
-        </div>
-    
-        <div class="feature" id="seasonal">
-            <h3>Seasonal Crops Districtwise</h3>
-            <p> seasonal crop availability, and support local farmers by understanding their seasonal offerings </p>
+            <div class="feature" id="analysis">
+                <a href="../cropanalysis/index.html">
+                    <img src="https://kj1bcdn.b-cdn.net/media/7418/soil_620x350_81487334083.jpg" alt="Crop Analysis">
+                    <p>Crop Analysis and Trends</p>
+                </a>
+            </div>
+
+            <div class="feature" id="seasonal">
+                <a href="../seasonalcrops/index.html">
+                    <img src="https://eng.ruralvoice.in/uploads/images/2023/02/image_750x_63f4493d63c11.jpg" alt="Seasonal Crops">
+                    <p>Seasonal Crops Districtwise</p>
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- <footer>
+    <footer>
         <p>&copy; 2024 FarmSyncro. All rights reserved.</p>
-    </footer> -->
+    </footer>
 
     <script src="script.js"></script>
 </body>
