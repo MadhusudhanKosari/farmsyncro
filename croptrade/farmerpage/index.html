@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Input - FarmSyncro</title>
+    <link rel="stylesheet" href="farmer-input.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://img.freepik.com/free-vector/flat-design-farmers-market-logo_23-2149325904.jpg?size=626&ext=jpg" alt="FarmSyncro Logo">
+        </div>
+        <h1>FarmSyncro</h1>
+    </nav>
+    <section class="input-form">
+        <h2>Farmer: What are you Selling?</h2>
+        <form id="farmerForm">
+            <label for="crop">Crop Name:</label>
+            <input type="text" id="crop" required>
+
+            <label for="quantity">Quantity (in tons):</label>
+            <input type="number" id="quantity" required>
+
+            <label for="farming-type">Farming Type:</label>
+            <select id="farming-type" required>
+                <option value="organic">Organic</option>
+                <option value="modern">Modern</option>
+            </select>
+
+            <label for="delivery-method">Delivery Method:</label>
+            <input type="text" id="delivery-method" placeholder="e.g., Home delivery, self-pickup" required>
+
+            <label for="payment-mode">Mode of Payment:</label>
+            <select id="payment-mode" required>
+                <option value="online">Online Transfer</option>
+                <option value="cash">Cash on Delivery</option>
+            </select>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
+    <script src="farmer-input.js"></script>
+</body>
+</html>

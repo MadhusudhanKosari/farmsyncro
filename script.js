@@ -1,7 +1,4 @@
-const analysisBtn = document.getElementById("analysis")
 
-const SeasonalBtn = document.getElementById("seasonal")
-console.log(SeasonalBtn);
 // Wait for DOM to load
 document.addEventListener("DOMContentLoaded", function () {
     const showSeasonalBtn = document.getElementById("show-seasonal-btn");
@@ -28,9 +25,26 @@ document.addEventListener("DOMContentLoaded", function () {
         seasonalCropsDiv.style.display = "block";
     });
 });
-analysisBtn.addEventListener("click",function(){
-    window.location.href="../cropanalysis/index.html"
-});
-SeasonalBtn.addEventListener("click",function(){
-    window.location.href="../seasonalcrops/index.html"
-});
+// Ensure the buttons are correctly selected
+const analysisBtn = document.getElementById("analysis");
+const SeasonalBtn = document.getElementById("seasonal");
+const tradebtn = document.getElementById("trade");
+
+// Add event listeners only if the buttons exist
+if (analysisBtn) {
+    analysisBtn.addEventListener("click", function() {
+        window.location.href = "../cropanalysis/index.html";
+    });
+}
+
+if (SeasonalBtn) {
+    SeasonalBtn.addEventListener("click", function() {
+        window.location.href = "../seasonalcrops/index.html";
+    });
+}
+
+if (tradebtn) {
+    tradebtn.addEventListener("click", function() {
+        window.location.href = "../croptrade/index.html";
+    });
+}
