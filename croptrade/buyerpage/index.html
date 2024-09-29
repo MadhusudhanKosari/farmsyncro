@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farmer Input - FarmSyncro</title>
-    <link rel="stylesheet" href="farmer-input.css">
+    <title>Buyer Input - FarmSyncro</title>
+    <link rel="stylesheet" href="buyer-input.css">
 </head>
 <body>
     <nav>
@@ -14,8 +14,8 @@
         <h1>FarmSyncro</h1>
     </nav>
     <section class="input-form">
-        <h2>Farmer: What are you Selling?</h2>
-        <form id="farmerForm">
+        <h2>Buyer: What are you Looking to Buy?</h2>
+        <form id="buyerForm">
             <label for="crop">Crop Name:</label>
             <input type="text" id="crop" required>
 
@@ -28,18 +28,12 @@
                 <option value="modern">Modern</option>
             </select>
 
-            <label for="delivery-method">Delivery Method:</label>
-            <input type="text" id="delivery-method" placeholder="e.g., Home delivery, self-pickup" required>
-
-            <label for="payment-mode">Mode of Payment:</label>
-            <select id="payment-mode" required>
-                <option value="online">Online Transfer</option>
-                <option value="cash">Cash on Delivery</option>
-            </select>
+            <label for="delivery-preference">Delivery Preference:</label>
+            <input type="text" id="delivery-preference" placeholder="e.g., Home delivery" required>
 
             <button type="submit" class="btn">Submit</button>
         </form>
     </section>
-    <script src="farmer-input.js"></script>
+    <script src="buyer-input.js"></script>
 </body>
 </html>
