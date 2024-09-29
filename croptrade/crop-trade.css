@@ -1,59 +1,71 @@
-/* Reset styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    text-align: center;
 }
 
 nav {
-    background-color: #4CAF50;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-}
-
-nav h1 {
-    color: white;
+    background-color: #4CAF50;
+    padding: 10px 20px;
 }
 
 nav .logo img {
     width: 50px;
+    height: 50px;
 }
 
-section {
-    padding: 20px;
-    text-align: center;
-}
-
-input, select, textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-button.btn {
-    background-color: #4CAF50;
+nav h1 {
     color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    font-size: 24px;
 }
 
-button.btn:hover {
-    background-color: #45a049;
+/* Section for trade options */
+.trade-options {
+    padding: 40px 20px;
 }
 
-.options {
+.trade-options h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Button container for images */
+.trade-buttons {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
+}
+
+.button-container {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.button-container:hover {
+    transform: scale(1.05);
+}
+
+.button-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.button-img:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button-container p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
 }
