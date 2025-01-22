@@ -21,7 +21,7 @@ header {
 }
 
 .logo {
-    height: 50px;
+    height: 100px;
 }
 
 /* Navigation */
@@ -139,4 +139,4 @@ nav ul li a {
         max-width: 80%;
         left: 10%;
     }
-}
+} 

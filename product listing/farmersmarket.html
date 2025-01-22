@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmers Market</title>
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        header img {
+            height: 100px;
+            width: auto;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        /* Container for Blocks */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+            gap: 30px;
+        }
+
+        /* Individual Block Styles */
+        .block {
+            width: 350px;
+            height: 250px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; /* Centering the content */
+            color: white;
+            font-size: 3rem; /* Increased font size for heading */
+            font-weight: bold;
+            text-transform: uppercase;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+            padding: 10px;
+        }
+
+        /* Hover Effect */
+        .block:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .block span {
+            z-index: 1;
+            color: white; /* White text for heading */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Added text shadow for readability */
+        }
+
+        /* Show More Button */
+        .block button {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #ffa500;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .block button:hover {
+            background-color: #ff7f00;
+            color: white;
+        }
+
+        /* Background Images for Blocks */
+        .block.vegetables {
+            background-image: url('https://media.istockphoto.com/id/174429248/photo/fresh-vegetables.jpg?s=612x612&w=0&k=20&c=fxlgOIET7gKa8M3rwkV974aUfB0gVpWiJQwUoxA4dtQ=');
+        }
+
+        .block.grains {
+            background-image: url('https://media.istockphoto.com/id/163729648/photo/organic-whole-grains.jpg?s=612x612&w=0&k=20&c=lUNYwLToX5mB50h31BdNpOBbtS25xc3Cwvq4tqh8ZZ8=');
+        }
+
+        .block.fruits {
+            background-image: url('https://media.istockphoto.com/id/529664572/photo/fruit-background.jpg?s=612x612&w=0&k=20&c=K7V0rVCGj8tvluXDqxJgu0AdMKF8axP0A15P-8Ksh3I=');
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/logo.jpeg" alt="Farmers Market Logo">
+        <h1>Farmers Market</h1>
+    </header>
+
+    <div class="container">
+        <div class="block vegetables">
+            <span>VEGETABLES</span>
+            <a href="./vegtables.html"><button>Show</button></a>
+        </div>
+        <div class="block grains">
+            <span>GRAINS</span>
+            <a href="./grains.html"> <button>Show</button></a>
+        </div>
+        <div class="block fruits">
+            <span>FRUITS</span>
+            <a href="./fruits.html"><button>Show</button></a>
+        </div>
+    </div>
+</body>
+</html>

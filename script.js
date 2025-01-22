@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function updateCarousel() {
         const itemWidth = items[0].getBoundingClientRect().width;
-        carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+        carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`; // Corrected interpolation with backticks
     }
 
     nextButton.addEventListener("click", () => {

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Vegetables</title>
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Light background color */
+        }
+
+        header {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        /* Container for blocks */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px;
+        }
+
+        /* Individual Block Styling */
+        .block {
+            width: 250px;
+            height: 300px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end; /* Aligning buttons to bottom */
+            color: white;
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 10px;
+        }
+
+        /* Hover Effect */
+        .block:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Text inside the block */
+        .block span {
+            z-index: 1;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow for readability */
+        }
+
+        /* Buttons */
+        .block button {
+            width: 80%;
+            padding: 10px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #ffa500; /* Orange background */
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            margin: 5px 0;
+        }
+
+        /* Button Hover Effect */
+        .block button:hover {
+            background-color: #ff7f00;
+        }
+
+        /* Background Images */
+        .block.tomatoes {
+            background-image: url('https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+        }
+
+        .block.LeafyVegetables {
+            background-image: url('./spinach.jpeg'); /* Corrected image URL */
+        }
+
+        .block.potato {
+            background-image: url('https://images.pexels.com/photos/2286776/pexels-photo-2286776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+        }
+
+        .block.chillies {
+            background-image: url('https://images.pexels.com/photos/2894234/pexels-photo-2894234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+        }
+
+        .block.onions {
+            background-image: url('https://images.pexels.com/photos/7129153/pexels-photo-7129153.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>Buy Vegetables</header>
+
+    <div class="container">
+        <!-- Tomatoes Block -->
+        <div class="block tomatoes">
+            <span>Tomatoes</span>
+            <button>Buy Now</button>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Leafy Block -->
+        <div class="block LeafyVegetables">
+            <span>Spinach</span>
+            <button>Buy Now</button>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Potato Block -->
+        <div class="block potato">
+            <span>Potato</span>
+            <button>Buy Now</button>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Chillies Block -->
+        <div class="block chillies">
+            <span>Chillies</span>
+            <button>Buy Now</button>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Onions Block -->
+        <div class="block onions">
+            <span>Onions</span>
+            <button>Buy Now</button>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+</body>
+</html>

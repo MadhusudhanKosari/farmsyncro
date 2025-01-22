@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Grains</title>
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Light background color */
+        }
+
+        header {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        /* Container for blocks */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px;
+        }
+
+        /* Individual Block Styling */
+        .block {
+            width: 250px;
+            height: 300px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end; /* Aligning buttons to bottom */
+            color: white;
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 10px;
+        }
+
+        /* Hover Effect */
+        .block:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Text inside the block */
+        .block span {
+            z-index: 1;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow for readability */
+        }
+
+        /* Buttons */
+        .block button {
+            width: 80%;
+            padding: 10px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #ffa500; /* Orange background */
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            margin: 5px 0;
+        }
+
+        /* Button Hover Effect */
+        .block button:hover {
+            background-color: #ff7f00;
+        }
+
+        /* Background Images */
+        .block.rice {
+            background-image: url('https://images.pexels.com/photos/4110251/pexels-photo-4110251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+        }
+
+        .block.wheat {
+            background-image: url('https://images.pexels.com/photos/54084/wheat-grain-agriculture-seed-54084.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+        }
+
+        .block.millet {
+            background-image: url('https://images.pexels.com/photos/17555574/pexels-photo-17555574/free-photo-of-seeds-on-a-market.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+        }
+
+        .block.corn {
+            background-image: url('https://images.pexels.com/photos/1459331/pexels-photo-1459331.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+        }
+
+        .block.groundnut {
+            background-image: url('https://images.pexels.com/photos/7717463/pexels-photo-7717463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>Buy Grains</header>
+
+    <div class="container">
+        <!-- Rice Block -->
+        <div class="block rice">
+            <span>Rice</span>
+            <button>Buy Now</button>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Wheat Block -->
+        <div class="block wheat">
+            <span>Wheat</span>
+            <button>Buy Now</button>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Millet Block -->
+        <div class="block millet">
+            <span>Millet</span>
+            <button>Buy Now</button>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Corn Block -->
+        <div class="block corn">
+            <span>Corn</span>
+            <button>Buy Now</button>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Groundnut Block -->
+        <div class="block groundnut">
+            <span>Groundnut</span>
+            <button>Buy Now</button>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+</body>
+</html>
