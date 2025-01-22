@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultural Products</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://images.pexels.com/photos/1227513/pexels-photo-1227513.jpeg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-size: 3.5rem; 
+            color: #000; 
+            margin-bottom: 40px;
+        }
+
+        .container {
+            max-width: 1200px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            position: relative;
+            width: 250px;
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-content {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        }
+
+        .card-content h3 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+
+        .card-content p {
+            margin-bottom: 15px;
+            font-size: 1rem;
+            
+        }
+
+        .card-content a {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #2b7a78;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .card-content a:hover {
+            background-color: #3aafa9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><strong>Agricultural Products</strong></h1>
+        <div class="options">
+            <!-- Seed Card -->
+            <div class="card" style="background-image: url('https://images.pexels.com/photos/1393382/pexels-photo-1393382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+                <div class="card-content">
+                    <h3>Seeds</h3>
+                  
+                    <a href="#">Shop Now</a>
+                </div>
+            </div>
+            <!-- Fertilizer Card -->
+            <div class="card" style="background-image: url('https://images.pexels.com/photos/20313654/pexels-photo-20313654/free-photo-of-a-farmer-walks-through-a-field-of-cabbage.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+                <div class="card-content">
+                    <h3>Fertilizers</h3>
+                   
+                    <a href="#">Shop Now</a>
+                </div>
+            </div>
+            <!-- Pesticides Card -->
+            <div class="card" style="background-image: url('/pest.jpeg');">
+                <div class="card-content">
+                    <h3>Pesticides</h3>
+                    
+                    <a href="#">Shop Now</a>
+                </div>
+            </div>
+            <!-- Additional Products Card -->
+            <div class="card" style="background-image: url('/WhatsApp\ Image\ 2025-01-22\ at\ 22.15.25.jpeg');">
+                <div class="card-content">
+                    <h3>Other Products</h3>
+                   
+                    <a href="#">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -8,8 +8,11 @@
 </head>
 <body>
     <header>
+        <div class="logo-container">
+            <img src="/logo.jpeg" alt="FarmSyncro Logo" class="logo">
+        </div>
         <h1>FarmSyncro</h1>
-        <p>Your trusted platform for crops trade and analysis</p>
+        <p>Where Farmer meets their Future.</p>
     </header>
 
     <!-- Navigation Bar -->
@@ -21,47 +24,69 @@
             <li><a href="./contactus/index.html">Contact</a></li>
             <li><a href="./loginpage/index.html">Login</a></li>
             <li><a href="./signuppage/index.html">Sign up</a></li>
-            <li><a href="#" id="notification-btn">Notifications</a></li>
-            <li>
-                <select id="language-select">
-                    <option value="en">English</option>
-                    <option value="hi">हिन्दी</option>
-                    <option value="te">తెలుగు</option>
-                </select>
-            </li>
         </ul>
     </nav>
 
-    <section id="intro">
-        <h2>Welcome to FarmSyncro</h2>
-        <p>We help farmers sell their crops directly and provide valuable insights on crop trends and seasonal availability.</p>
-    </section>
-
+    <!-- Features Section with Carousel -->
     <section id="features">
         <h2>Our Features</h2>
 
-        <!-- Image Buttons for Features -->
-        <div class="feature-container">
-            <div class="feature" id="trade">
-                <a href="../croptrade/index.html">
-                    <img src="https://img.freepik.com/free-photo/green-tea-bud-leaves-green-tea-plantations-morning_335224-955.jpg?t=st=1726479840~exp=1726483440~hmac=cbb29f3f87d6aad81ee480ca896815073c34b871729460a5a2fd1477c0562ec8&w=740" alt="Direct Crop Trade">
-                    <p>Direct Crop Trade</p>
-                </a>
-            </div>
-
-            <div class="feature" id="analysis">
-                <a href="../cropanalysis/index.html">
-                    <img src="https://kj1bcdn.b-cdn.net/media/7418/soil_620x350_81487334083.jpg" alt="Crop Analysis">
-                    <p>Crop Analysis and Trends</p>
-                </a>
-            </div>
-
-            <div class="feature" id="seasonal">
-                <a href="../seasonalcrops/index.html">
+        <div class="carousel-container">
+            <!-- Navigation Buttons -->
+            <button class="carousel-btn prev">&lt;</button>
+            <div class="carousel">
+                <!-- Feature 1 -->
+                <div class="carousel-item">
+                    <img src="https://images.pexels.com/photos/2733918/pexels-photo-2733918.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Direct Crop Trade">
+                    <div class="carousel-content">
+                        <h3>Direct Crop Trade</h3>
+                        <p>Connect directly with buyers and sellers.</p>
+                        <a href="" class="btn-primary">Know More</a>
+                        <a href="./croptrade/index.html" class="btn-secondary">Go to Page</a>
+                    </div>
+                </div>
+                <!-- Feature 2 -->
+                <div class="carousel-item">
+                    <img src="https://images.pexels.com/photos/2583755/pexels-photo-2583755.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Crop Analysis">
+                    <div class="carousel-content">
+                        <h3>Crop Analysis and Trends</h3>
+                        <p>Get insights on crop trends.</p>
+                        <a href="" class="btn-primary">Know More</a>
+                        <a href="./cropanalysis/index.html" class="btn-secondary">Go to Page</a>
+                    </div>
+                </div>
+                <!-- Feature 3 -->
+                <div class="carousel-item">
+                    <img src="https://images.pexels.com/photos/1389986/pexels-photo-1389986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Seasonal Crops">
+                    <div class="carousel-content">
+                        <h3>Seasonal Crops Districtwise</h3>
+                        <p>Discover crops grown in specific seasons.</p>
+                        <a href="" class="btn-primary">Know More</a>
+                        <a href="./seasonalcrops/index.html" class="btn-secondary">Go to Page</a>
+                    </div>
+                </div>
+                <!-- 3feature 4 -->
+                <div class="carousel-item">
+                    <img src="https://images.pexels.com/photos/28248795/pexels-photo-28248795/free-photo-of-elma-kurutma.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Seasonal Crops">
+                    <div class="carousel-content">
+                        <h3>Agri Exchange</h3>
+                        <p>Where Agriculture meets opportunity.</p>
+                        <a href="" class="btn-primary">Know More</a>
+                        <a href="./product listing/index.html" class="btn-secondary">Go to Page</a>
+                    </div>
+                </div>
+                <!-- <div class="carousel-item">
                     <img src="https://eng.ruralvoice.in/uploads/images/2023/02/image_750x_63f4493d63c11.jpg" alt="Seasonal Crops">
-                    <p>Seasonal Crops Districtwise</p>
-                </a>
+                    <div class="carousel-content">
+                        <h3>Seasonal Crops Districtwise</h3>
+                        <p>Discover crops grown in specific seasons.</p>
+                        <a href="" class="btn-primary">Know More</a>
+                        <a href="" class="btn-secondary">Go to Page</a>
+                    </div>
+                </div> -->
             </div>
+            <!-- Navigation Buttons -->
+            <button class="carousel-btn next">&gt;</button>
         </div>
     </section>
 
