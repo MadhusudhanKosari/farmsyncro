@@ -34,3 +34,9 @@ button.btn {
 button.btn:hover {
     background-color: #45a049;
 }
+/* Medium size for the logo */
+.logo-medium {
+    width: 150px; /* Adjust to your desired medium size */
+    height: auto; /* Maintain aspect ratio */
+    transition: all 0.3s ease; /* Smooth transition */
+  }
