@@ -44,7 +44,7 @@
     position: absolute; 
     background-color: white; 
     min-width: 160px; 
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
+    box-shadow: transparent; 
     z-index: 100; 
     border-radius: 5px;">
     <a href="#" style="
@@ -146,7 +146,31 @@
             <button class="carousel-btn next">&gt;</button>
         </div>
     </section>
-    <p>"Solution to Farmers , Access to all"</p>
+    <div style="width: 100%; overflow: hidden; text-align: center; position: relative;">
+        <p id="sliding-text" style="
+          display: inline-block;
+          white-space: nowrap;
+          font-size: 25px;
+          font-weight: bold;
+          font-style: italic;
+          position: relative;
+          animation: slide 10s linear infinite;
+        ">
+          "Solution to farmers, access to all."
+        </p>
+      </div>
+      
+      <!-- Add this CSS inside a <style> tag in your HTML -->
+      <style>
+        @keyframes slide {
+          0% {
+            transform: translateX(100%);
+          }
+          100% {
+            transform: translateX(-100%);
+          }
+        }
+      </style>
     <!-- Add this at the bottom of your HTML -->
     <footer class="footer">
         <div class="footer-content">
