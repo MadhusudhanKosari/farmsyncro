@@ -25,3 +25,17 @@ document.addEventListener("DOMContentLoaded", function () {
     // Initialize carousel on load
     updateCarousel();
 });
+function toggleDropdown() {
+    const dropdown = document.getElementById("languageDropdown");
+    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+  }
+
+  // Optional: Close the dropdown if clicked outside
+  window.onclick = function (event) {
+    if (!event.target.matches("button")) {
+      const dropdown = document.getElementById("languageDropdown");
+      if (dropdown && dropdown.style.display === "block") {
+        dropdown.style.display = "none";
+      }
+    }
+  };
